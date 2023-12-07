@@ -1,53 +1,15 @@
-# Pie chart diagrams
+## Top 10 Country Tours in Vietnam, November 2023
 
-> A pie chart (or a circle chart) is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice (and consequently its central angle and area), is proportional to the quantity it represents. While it is named for its resemblance to a pie which has been sliced, there are variations on the way it can be presented. The earliest known pie chart is generally credited to William Playfair's Statistical Breviary of 1801
-> -Wikipedia
+Country | Number of Tourists | Percentage
+------- | -------- | --------
+**Vietnam** | 3222.9 | 49.5%
+China | 1509.0 | 23.0%
+Taiwan | 758.2 | 11.6%
+United States | 658.4 | 10.1%
+Japan | 527.2 | 8.1%
+Thailand | 441.8 | 6.7%
+Malaysia | 418.8 | 6.4%
+Cambodia | 359.3 | 5.5%
+Australia | 353.0 | 5.4%
+India | 352.2 | 5.4%
 
-Mermaid can render Pie Chart diagrams.
-
-```mermaid-example
-pie title Pets adopted by volunteers
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15
-```
-
-## Syntax
-
-Drawing a pie chart is really simple in mermaid.
-
-- Start with `pie` keyword to begin the diagram
-  - `showData` to render the actual data values after the legend text. This is **_OPTIONAL_**
-- Followed by `title` keyword and its value in string to give a title to the pie-chart. This is **_OPTIONAL_**
-- Followed by dataSet. Pie slices will be ordered clockwise in the same order as the labels.
-  - `label` for a section in the pie diagram within `" "` quotes.
-  - Followed by `:` colon as separator
-  - Followed by `positive numeric value` (supported up to two decimal places)
-
-[pie] [showData] (OPTIONAL)
-[title] [titlevalue] (OPTIONAL)
-"[datakey1]" : [dataValue1]
-"[datakey2]" : [dataValue2]
-"[datakey3]" : [dataValue3]
-.
-.
-
-## Example
-
-```mermaid-example
-%%{init: {"pie": {"textPosition": 0.5}, "themeVariables": {"pieOuterStrokeWidth": "5px"}} }%%
-pie showData
-    title Key elements in Product X
-    "Calcium" : 42.96
-    "Potassium" : 50.05
-    "Magnesium" : 10.01
-    "Iron" :  5
-```
-
-## Configuration
-
-Possible pie diagram configuration parameters:
-
-| Parameter      | Description                                                                                                  | Default value |
-| -------------- | ------------------------------------------------------------------------------------------------------------ | ------------- |
-| `textPosition` | The axial position of the pie slice labels, from 0.0 at the center to 1.0 at the outside edge of the circle. | `0.75`        |
